@@ -26,7 +26,7 @@ git commit -m "Script commit"
 git push
 echo "..pushing to repo.."
 
-echo "removing the git-branches-project folder after 3 seconds..."
+echo "removing the git-branches-project folder after 10 seconds..."
 sleep 10
 sleep 1s
 cd content

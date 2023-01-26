@@ -1,8 +1,8 @@
 # GIT Utils
 
-> *I'm not finished when I'm tired, I'm finished when I'm done.*
+> _I'm not finished when I'm tired, I'm finished when I'm done._
 >
-> > > > D. Goggins
+> > D. Goggins
 
 Each script inside the `script` folder, executes a list of bash and git commands
 
