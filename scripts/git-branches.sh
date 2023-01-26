@@ -1,7 +1,6 @@
 #!/bin/sh
 
-
-echo "initializing directory with sample file.."
+echo "initializing directory with a sample file.."
 chmod +x git-branches.sh
 mkdir -p ../content
 cd ../content
@@ -23,7 +22,7 @@ git status
 echo "..staging to git.."
 git add .
 echo "..committing to git.."
-git commit -m "First commit"
+git commit -m "Script commit"
 git push
 echo "..pushing to repo.."
 
