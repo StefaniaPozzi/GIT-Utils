@@ -3,9 +3,9 @@
 > I'm not finished when I'm tired, I'm finished when I'm done.
 > D. Goggins
 
-Each script inside the `script` folder, contains a list of bash and git commands
+Each script inside the `script` folder, executes a list of bash and git commands
 
-1. Create a new branch and play with it IN PROGRESS
+1. Create a new branch on the GIT-utils repo on github and play with it ...IN PROGRESS
 
 ## Resources
 
