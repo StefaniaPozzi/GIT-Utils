@@ -31,5 +31,5 @@ echo "removing the git-branches-project folder after 3 seconds..."
 sleep 10
 sleep 1s
 cd ..
-rm -rfv git-branches-project
+rm -rfv content/git-branches-project
 echo "git-branches-project folder removed!"

@@ -1,4 +1,4 @@
-# GIT Utils - S. Pozzi
+# GIT Utils
 
 > I'm not finished when I'm tired, I'm finished when I'm done.
 > D. Goggins
