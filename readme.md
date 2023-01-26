@@ -3,12 +3,16 @@
 > I'm not finished when I'm tired, I'm finished when I'm done.
 > D. Goggins
 
+Each script inside the `script` folder, contains a list of bash and git commands
+
+1. Create a new branch and play with it IN PROGRESS
+
 ## Resources
 
 1. [Official GIT tutorial](https://git-scm.com/docs/gittutorial)
 2. [ChatGPT](https://chat.openai.com/)
 
-| Commands                          | Functionality                                 |
+| Most used commands                | Functionality                                 |
 | --------------------------------- | --------------------------------------------- |
 | `add`                             | stages files                                  |
 | `branch [name]`                   | new branch                                    |
@@ -17,6 +21,7 @@
 | `committ -m`                      |                                               |
 | `diff`                            | diffs between current and last committed file |
 | `fetch`                           | download from another repo                    |
+| `help [command]`                  |                                               |
 | `init`                            |                                               |
 | `log`                             |                                               |
 | `merge`                           |                                               |
@@ -30,6 +35,9 @@
 | `rebase -i HEAD~n`                | interactive mode                              |
 | `stash`                           | save but do not commit                        |
 
+### Always introduce yourself
+
 ```
-code block
-```~~~~
+config --global user.name
+config --global user.email
+```
