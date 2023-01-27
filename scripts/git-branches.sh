@@ -33,7 +33,7 @@ push_on_github
 
 echo "..creating and checking out to another branch.."
 git branch feature/weeklyMenu
-git push origin master
+git push --set-upstream origin feature/weeklyMenu
 git checkout feature/weeklyMenu
 
 echo "..modifying files in new branch.."
