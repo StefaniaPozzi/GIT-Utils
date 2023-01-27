@@ -59,7 +59,7 @@ if __name__ == "__main__":
     main()
 EOF
 git stash
-
+ delete...
 echo "removing the git-branches-project folder after 10 seconds..."
 sleep 10
 sleep 1s
