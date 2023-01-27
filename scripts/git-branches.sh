@@ -1,5 +1,15 @@
 #!/bin/sh
 
+
+push_on_github() {
+    echo "..pushing to github repo.."
+    git init
+    git status
+    git add .
+    git commit -m "Script commit"
+    git push
+}
+
 echo "initializing directory with a sample file.."
 chmod +x git-branches.sh
 mkdir -p ../content
@@ -17,14 +27,23 @@ if __name__ == "__main__":
 EOF
 
 cd ../..
-git init
-git status
-echo "..staging to git.."
-git add .
-echo "..committing to git.."
-git commit -m "Script commit"
-git push
-echo "..pushing to repo.."
+
+push_on_github
+
+echo "..creating and checking out to another branch.."
+git branch feature/weeklyMenu
+git checkout feature/weeklyMenu
+
+echo "..modifying files in new branch.."
+cat << EOF >> SampleFile.py
+def main():
+    print("Hallo from Stefi's script in a new branch")
+
+if __name__ == "__main__":
+    main()
+EOF
+
+push_on_github()
 
 echo "removing the git-branches-project folder after 10 seconds..."
 sleep 10

@@ -1,6 +1,6 @@
 # GIT Utils
 
-> _I'm not finished when I'm tired, I'm finished when I'm done._
+> I'm not finished when I'm tired, I'm finished when I'm done.\_
 >
 > > D. Goggins
 
