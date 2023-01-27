@@ -43,7 +43,7 @@ if __name__ == "__main__":
     main()
 EOF
 
-push_on_github()
+push_on_github
 
 echo "removing the git-branches-project folder after 10 seconds..."
 sleep 10
