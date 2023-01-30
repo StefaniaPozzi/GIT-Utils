@@ -1,3 +1,4 @@
+#!/bin/sh
 push_on_github() {
     echo "..pushing to github repo.."
     git init
