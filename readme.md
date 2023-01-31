@@ -14,4 +14,4 @@ Each script inside the `script` folder, executes a list of bash and git commands
 ## Resources
 
 1. [Official GIT tutorial](https://git-scm.com/docs/gittutorial)
-2. [Tutorialspoint] (https://www.tutorialspoint.com/git/index.htm)
+2. [w3schools] (https://www.w3schools.com/git/)
