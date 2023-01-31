@@ -20,6 +20,6 @@ git branch -d feature/hotfix
 #handle conflicts.. TODO
 
 #work with Github
-git remote add origin https://github.com/StefaniaPozzi/GIT-Utils.git
+#git remote add origin https://github.com/StefaniaPozzi/GIT-Utils.git
 
 git push --set-upstream origin master
