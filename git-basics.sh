@@ -5,12 +5,8 @@ git pull origin
 
 #add file to a new branch
 git branch feature/hotfix
-<<<<<<< HEAD
-git checkout feature/hotfix
-=======
 git branch -m feature/hotfix feature/super-hotfix
 git checkout feature/super-hotfix
->>>>>>> feature/super-hotfix
 
 touch hotFix.css
 
