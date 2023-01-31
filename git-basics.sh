@@ -1,7 +1,7 @@
 #!/bin/sh
 source  utils.sh
 
-git init
+git pull origin
 
 #add file to a new branch
 git branch feature/hotfix
