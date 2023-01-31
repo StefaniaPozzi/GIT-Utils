@@ -16,8 +16,9 @@ git commit -m "Add hotfix"
 git checkout master
 git merge feature/hotfix 
 git branch -d feature/hotfix
-
+rm touch hotFix.css
 #handle conflicts.. TODO
 
 #work with Github
-git remote add origin https://github.com/StefaniaPozzi/GIT-Utils.git
+#git remote add origin https://github.com/StefaniaPozzi/GIT-Utils.git
+git push --set-upstream origin master
