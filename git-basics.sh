@@ -16,7 +16,7 @@ git commit -m "Add hotfix"
 git checkout master
 git merge feature/hotfix 
 git branch -d feature/hotfix
-rm touch hotFix.css
+rm hotFix.css
 #handle conflicts.. TODO
 
 #work with Github
