@@ -1,6 +1,7 @@
 #!/bin/sh
 source  utils.sh
 
+""
 git init
 #add file to a new branch
 git branch -f feature/hotfix
