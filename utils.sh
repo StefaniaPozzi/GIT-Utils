@@ -3,7 +3,7 @@
 add_commit_push(){
     git add --all
     git commit -m $1
-    git push origin 
+    git push origin
 }
 
 initialize(){
