@@ -2,6 +2,7 @@
 
 initialize(){
     git checkout master || git checkout -b master
+    git pull origin
     git branch -a
 }
 
