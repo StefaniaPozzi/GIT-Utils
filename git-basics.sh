@@ -1,9 +1,13 @@
 #!/bin/sh
 . utils.sh
 
+NEW_BRANCH_NAME = "feature/hotfix"
+NEW_BRANCH_FILE= "superHotFix.css"
+NEW_BRANCH_MSG= "creating new branch"
+
 initialize
-create_new_branch_and_add_new_file "superHotFix.css"
-merge_to_master_branch "feature/hotfix"
+create_new_branch_and_add_new_file $NEW_BRANCH_NAME $NEW_BRANCH_FILE $NEW_BRANCH_MSG
+merge_to_master_branch $NEW_BRANCH_NAME
 
 #merge hotfix into master and remove old branch
 #git checkout master
