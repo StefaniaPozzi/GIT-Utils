@@ -1,6 +1,7 @@
 #!/bin/sh
 . utils.sh
 
+initialize
 create_new_branch_and_add_new_file "superHotFix.css"
 
 

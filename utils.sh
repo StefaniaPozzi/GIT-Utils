@@ -1,7 +1,7 @@
 #!/bin/sh
 
-init(){
-    git checkout develop || git checkout -b develop
+initialize(){
+    git checkout master || git checkout -b master
     git branch -a
 }
 
