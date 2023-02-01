@@ -3,12 +3,12 @@
 add_commit_push(){
     git add --all
     git commit -m $1
-    git push origin
+    git push --set-upstream origin master
 }
 
 initialize(){
     #git remote add origin https://github.com/StefaniaPozzi/GIT-Utils.git
-    #git push --set-upstream origin master
+    #git push --set-upstream origin master 
     add_commit_push $1
     git init
     git branch -f master
