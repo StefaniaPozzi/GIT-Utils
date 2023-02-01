@@ -1,15 +1,22 @@
 #!/bin/sh
 . utils.sh
 
+INIT_MSG="inizializing"
 NEW_BRANCH_NAME = "feature/hotfix"
 NEW_BRANCH_FILE= "superHotFix.css"
 NEW_BRANCH_MSG= "created new branch"
 
-add_commit_push "last changes"
 
-initialize
-create_new_branch_and_add_new_file $NEW_BRANCH_NAME $NEW_BRANCH_FILE $NEW_BRANCH_MSG
-merge_to_master_branch $NEW_BRANCH_NAME
+
+initialize $INIT_MSG
+#create_new_branch_and_add_new_file $NEW_BRANCH_NAME $NEW_BRANCH_FILE $NEW_BRANCH_MSG
+#merge_to_master_branch $NEW_BRANCH_NAME
+
+
+
+
+
+
 
 #merge hotfix into master and remove old branch
 #git checkout master

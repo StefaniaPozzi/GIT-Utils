@@ -1,7 +1,13 @@
 #!/bin/sh
 
+add_commit_push(){
+    git add --all
+    git commit -m $1
+    git push origin 
+}
 
 initialize(){
+    add_commit_push $1
     git init
     git branch -f master
     git checkout master || git checkout -b master
@@ -9,11 +15,7 @@ initialize(){
     git branch -a
 }
 
-add_commit_push(){
-    git add --all
-    git commit -m $1
-    git push origin 
-}
+
 
 create_new_branch_and_add_new_file(){
     #add file to a new branch
