@@ -1,7 +1,6 @@
 #!/bin/sh
 
 initialize(){
-    git pull origin
     git checkout master || git checkout -b master
     git pull origin
     git branch -a
@@ -16,7 +15,7 @@ create_new_branch_and_add_new_file(){
     #commit and push changes
     git add --all
     git commit -m "Add hotfix"
-    git push origin feature/hotfix
+    git push origin #feature/hotfix
 
 }
 
