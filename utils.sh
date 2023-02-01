@@ -1,11 +1,18 @@
 #!/bin/sh
 
+
 initialize(){
     git init
     git branch -f master
     git checkout master || git checkout -b master
     git pull origin
     git branch -a
+}
+
+add_commit_push(){
+    git add --all
+    git commit -m $1
+    git push origin 
 }
 
 create_new_branch_and_add_new_file(){
@@ -15,11 +22,10 @@ create_new_branch_and_add_new_file(){
     git checkout $1
     touch $2
 
-    #commit and push changes
-    git add --all
-    git commit -m $3
-    git push origin #feature/hotfix
+    add_commit_push $3
 }
+
+
 
 merge_to_master_branch(){
     git checkout master || git checkout -b master
