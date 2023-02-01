@@ -16,7 +16,6 @@ create_new_branch_and_add_new_file(){
     git add --all
     git commit -m "Add hotfix"
     git push origin #feature/hotfix
-
 }
 
 merge_to_master_branch(){
