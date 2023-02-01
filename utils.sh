@@ -3,13 +3,13 @@
 add_commit_push(){
     git add --all
     git commit -m $1
-    git push --set-upstream origin master
+    git push --set-upstream origin $2
 }
 
 initialize(){
     #git remote add origin https://github.com/StefaniaPozzi/GIT-Utils.git
     #git push --set-upstream origin master 
-    add_commit_push $1
+    add_commit_push $1 "master"
     git init
     git branch -f master
     git checkout master || git checkout -b master
@@ -23,9 +23,7 @@ create_new_branch_and_add_new_file(){
     git branch -f $1
     git checkout $1
     touch "fix.css"
-    git add --all
-    git commit -m "Create new branch"
-    git push --set-upstream origin feature/hotfix
+    add_commit_push "init" "feature/hotfix"
 }
 
 
