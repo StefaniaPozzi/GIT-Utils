@@ -1,31 +1,10 @@
 #!/bin/sh
-source  utils.sh
+. utils.sh
 
-git pull origin
+INIT_MSG="inizializing"
+NEW_BRANCH_NAME="feature/hotfix"
+NEW_BRANCH_FILE="superHotFix.css"
+NEW_BRANCH_MSG="created new branch"
 
-#add file to a new branch
-git branch feature/hotfix
-<<<<<<< HEAD
-git checkout feature/hotfix
-=======
-git branch -m feature/hotfix feature/super-hotfix
-git checkout feature/super-hotfix
->>>>>>> feature/super-hotfix
-
-touch hotFix.css
-
-git add --all
-git commit -m "Add hotfix"
-
-#merge hotfix into master and remove old branch
-git checkout develop
-
-git merge feature/super-hotfix 
-git branch -d feature/super-hotfix
-
-#handle conflicts.. TODO
-
-#work with Github
-#git remote add origin https://github.com/StefaniaPozzi/GIT-Utils.git
-
-git push --set-upstream origin master
+initialize $INIT_MSG
+create_new_branch_and_add_new_file $NEW_BRANCH_NAME $NEW_BRANCH_FILE $NEW_BRANCH_MSG
