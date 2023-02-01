@@ -17,6 +17,13 @@ create_new_branch_and_add_new_file(){
     git push origin feature/hotfix
 
 }
+
+merge_to_master_branch(){
+    git checkout master || git checkout -b master
+    git pull origin
+    git merge master $1
+}
+
 push() {
     echo "..pushing to github repo.."
     git init
