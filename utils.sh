@@ -23,7 +23,7 @@ create_new_branch_and_add_new_file(){
     git branch -f $1
     git checkout $1
     touch "fix.css"
-     git add --all
+    git add --all
     git commit -m "Create new branch"
     git push --set-upstream origin feature/hotfix
 }
