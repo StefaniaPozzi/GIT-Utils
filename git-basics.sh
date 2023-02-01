@@ -11,7 +11,7 @@ touch hotFix.css
 #commit and push changes
 git add --all
 git commit -m "Add hotfix"
-git push --set-upstream origin master
+git push --set-upstream origin feature/hotfix
 
 #merge hotfix into master and remove old branch
 #git checkout master
