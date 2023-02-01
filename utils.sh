@@ -10,6 +10,7 @@ initialize(){
 
 create_new_branch_and_add_new_file(){
     #add file to a new branch
+    git branch -D $1
     git branch -f $1
     git checkout $1
     touch $2
