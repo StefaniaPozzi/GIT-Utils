@@ -3,9 +3,8 @@
 
 initialize
 create_new_branch_and_add_new_file "superHotFix.css"
+merge hotfix into master and remove old branch
 
-
-#merge hotfix into master and remove old branch
 #git checkout master
 #git merge feature/hotfix 
 #git branch -d feature/hotfix
